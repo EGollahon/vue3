@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - vue3</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">  
+  <input type="text" v-model="name" placeholder="Name"/><br>
+  <input type="text" v-model="email" placeholder="Email"/>
+  <div>{{nameMessage}}</div>
+  <div>{{emailMessage}}</div>
+  <div>{{submitted}}</div>
+  <character v-for="item in list" v-bind:name="item.name" v-bind:codename="item.codename"></character>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
